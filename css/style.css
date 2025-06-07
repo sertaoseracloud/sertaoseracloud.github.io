@@ -8134,7 +8134,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: "Poppins", Arial, sans-serif;
-  background: #000000;
+  background: #002752;
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
@@ -8868,6 +8868,8 @@ h1, h2, h3, h4, h5,
       color: #000000; }
       .services-1:hover h3:after {
         background: #000000; }
+                .services-1:hover p {
+                  color: #000000; }
 
 .progress-wrap {
   width: 100%;
