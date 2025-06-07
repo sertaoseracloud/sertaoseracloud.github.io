@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>O Sertão será Cloud | Mentoria em Arquitetura de Soluções e Cloud</title>
+	<title>O Sertão será Cloud | Mentoria em Arquitetura de Soluções</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -53,7 +53,7 @@
 		"name": "Cláudio Raposo",
 		"url": "https://sertaoseracloud.github.io/",
 		"image": "https://sertaoseracloud.github.io/images/bg_2.png",
-		"jobTitle": "Mentor em Arquitetura de Soluções e Cloud",
+		"jobTitle": "Mentor em Arquitetura de Soluções",
 		"sameAs": [
 			"https://www.linkedin.com/in/claudioraposo",
 			"https://twitter.com/claudioraposo"
@@ -66,7 +66,7 @@
 		]
 	}
 	</script>
-	
+
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -108,7 +108,7 @@
 	<section class="ftco-about img ftco-section ftco-no-pb" id="home-section" style="margin-bottom:0; padding-bottom:0;">
 		<div class="container">
 			<div class="row d-flex">
-				<div class="col-md-6 col-lg-5 d-flex">
+				<div class="col-md-6 col-lg-5 d-flex image-desktop">
 					<div class="img-about img d-flex align-items-stretch" style="width: 100%;">
 						<div class="overlay"></div>
 						<div class="img d-flex align-self-stretch align-items-center"
@@ -116,6 +116,13 @@
 						</div>
 					</div>
 				</div>
+				<style>
+					@media (max-width: 767.98px) {
+						.image-desktop {
+							display: none !important;
+						}
+					}
+				</style>
 				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
 					<div class="row justify-content-start">
 						<div class="col-md-12 heading-section ftco-animate">
@@ -126,7 +133,21 @@
 						<div class="text">
 							<p >
 								<span>Faltam somente</span>
-								<span class="number" data-number="10">0</span>
+								<span id="vagas-restantes" class="number">10</span>
+								<script>
+								document.addEventListener("DOMContentLoaded", function() {
+									var vagas = 10;
+									var vagasSpan = document.getElementById("vagas-restantes");
+									function decrementarVagas() {
+										if (vagas > 5) {
+											vagas--;
+											vagasSpan.textContent = vagas;
+										}
+									}
+									// Exemplo: decrementa a cada 10 segundos (ajuste conforme necessário)
+									setInterval(decrementarVagas,500);
+								});
+								</script>
 								<span>Vagas!</span>
 							</p>
 							<p>
@@ -139,7 +160,7 @@
 		</div>
 	</section>
 
-	<section class="ftco-section" id="services-section" style="margin-top:20px; margin-bottom:20px; padding-top:0; padding-bottom:1rem;">
+	<section class="ftco-section" id="services-section" >
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-12 heading-section text-center ftco-animate mb-5">
@@ -148,7 +169,7 @@
 					<p>Mentorias práticas e personalizadas para acelerar sua carreira em Arquitetura de Soluções e Cloud.</p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row mt-5">
 				<div class="col-md-4 text-center d-flex ftco-animate">
 					<a href="#" class="services-1">
 						<span class="icon">
@@ -245,8 +266,7 @@
 							<span>Docker Captain® 2025 🏆</span><br>
 							<span>Green Software Champion® 2025🏆</span>
 							<p class="mt-4">
-								<a href="#" class="btn btn-primary py-3 px-4">Agende uma conversa</a>
-								<a href="#" class="btn btn-white btn-outline-white py-3 px-4">Conheça a mentoria</a>
+								<a href="#contact-section" class="btn btn-primary py-3 px-4">Vamos marcar uma conversa</a>
 							</p>
 						</div>
 					</div>
@@ -265,14 +285,14 @@
 
 	<section class="ftco-section ftco-no-pb" id="season-section">
 		<div class="container">
-			<div class="row justify-content-center">
+			<div class="row justify-content-center mb-5">
 				<div class="col-md-10 heading-section text-center ftco-animate mb-4">
 					<h1 class="big big-2">Agenda</h1>
 					<h2 class="mb-4">Conteúdo Programático</h2>
 					<p>Mais de 10 anos de experiência em Arquitetura de Soluções, Cloud Computing, DevOps e liderança de equipes técnicas em projetos de transformação digital.</p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row mt-5">
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">Semana 1</span>
@@ -350,8 +370,7 @@
 		</div>
 	</section>
 
-	<section class="ftco-section" id="guidelines-section"
-		style="margin-top:20px; margin-bottom:20px; padding-top:0; padding-bottom:1rem;">
+	<section class="ftco-section" id="guidelines-section">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-12 heading-section text-center ftco-animate mb-5">
@@ -360,7 +379,7 @@
 					<p>Sua satisfação é prioridade! Todo o processo é transparente, seguro e sem burocracia.</p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row mt-5">
 				<div class="col-md-3 text-center d-flex ftco-animate">
 					<a href="#" class="services-1">
 						<span class="icon">
@@ -368,7 +387,7 @@
 						</span>
 						<div class="desc">
 							<h3 class="mb-5">Certificado de conclusão</h3>
-							<p>Receba um certificado exclusivo ao concluir a mentoria, comprovando sua participação e aprendizado em Arquitetura de Soluções e Cloud.</p>
+							<p>Receba um certificado exclusivo ao concluir a mentoria, comprovando sua participação e aprendizado em Arquitetura de Soluções.</p>
 						</div>
 					</a>
 				</div>
